@@ -1,0 +1,249 @@
+#cv-title {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.cv-container {
+  display: flex;
+  background-color: #2f5496; /* color azul sidebar */
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(107, 91, 255, 0.3);
+  overflow: hidden;
+  min-height: 600px;
+}
+
+/* Sidebar */
+.cv-sidebar {
+  flex: 0 0 320px;
+  background-color: var(--cv-sidebar-bg-color);
+  color: white;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.cv-sidebar::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 20px;
+  bottom: 20px;
+  width: 2px;
+  background-color: #a2c4c9;
+  opacity: 0.3;
+}
+
+/* Foto y efectos */
+.cv-photo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid white;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  margin-bottom: 25px;
+  transition: transform 0.3s ease;
+}
+.cv-photo img:hover {
+  transform: scale(1.05);
+}
+
+/* Textos en sidebar */
+.cv-sidebar h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 8px;
+  color: white;
+}
+.cv-sidebar h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  color: var(--cv-sidebar-cv-color);
+}
+
+/* Contacto sidebar */
+.cv-contact {
+  font-size: 0.95rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+.cv-contact a {
+      color: var(--cv-sidebar-cv-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  transition: color 0.3s ease;
+}
+.cv-contact a:hover {
+  color: white;
+}
+.cv-contact i {
+  font-size: 1.25rem;
+}
+
+.a-cv {
+  color: var(--tip-text-color);
+  font-weight: bold;
+}
+
+/* Divisores */
+.cv-divider {
+  width: 60%;
+  height: 1px;
+  background-color: var(--cv-sidebar-cv-color);   /* color: var(--primary-color); */
+  margin: 25px auto;
+}
+
+/* Habilidades sidebar */
+.cv-sidebar h3 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+      color: var(--cv-sidebar-cv-color);
+  font-size: 1.2rem;
+  text-align: left;
+}
+.cv-skills-list-sidebar {
+  list-style: circle;
+  padding-left: 0;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+.cv-skills-list-sidebar li {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+      color: var(--cv-sidebar-cv-color);
+}
+
+/* Educación sidebar */
+.cv-education-sidebar .edu-item {
+  margin-bottom: 22px;
+  font-size: 0.95rem;
+      color: var(--cv-sidebar-cv-color);
+}
+.cv-education-sidebar .edu-item strong {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 6px;
+}
+.cv-education-sidebar .edu-item span {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* Contenido derecho blanco */
+.cv-main {
+  flex: 1;
+  background-color: var(--cv-bg-color);
+  padding: 40px 50px;
+  color: var(--text-color, #222);
+  overflow-y: auto;
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(15px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* Títulos derecho */
+.cv-main h1 {
+  font-size: 2.4rem;
+  font-weight: 900;
+  margin-bottom: 6px;
+      color: var(--primary-color);
+}
+
+.cv-main h2.role-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+      color: var(--primary-color);
+}
+
+/* Secciones derecho */
+.cv-section-block {
+  margin-bottom: 35px;
+}
+
+.cv-section-block h3 {
+  color: var(--cv-subtitle-color);
+  font-weight: 700;
+  border-bottom: 3px solid var(--primary-color);
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+
+/* Experiencia */
+.cv-job {
+  margin-bottom: 25px;
+}
+
+.cv-job h4 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--text-color, #222);
+  margin-bottom: 4px;
+}
+
+.cv-job-date {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #5c6bc0;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.cv-job-company {
+  font-weight: 600;
+  color: #3949ab;
+  margin-bottom: 6px;
+}
+
+.cv-job-description {
+  font-size: 1rem;
+  line-height: 1.5;
+      color: var(--tip-text-color);
+  text-align: justify;
+}
+
+/* Habilidades técnicas */
+.cv-skills-list-main {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+}
+
+.cv-skills-list-main li {
+  background-color: #3949ab;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.cv-skills-list-main li:hover {
+  background-color: #1a237e;
+}
+
+.cv-main-section {
+  padding: 40px 40px;
+  margin: 25px auto;
+}
