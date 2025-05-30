@@ -1,0 +1,600 @@
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 5vw;
+    gap: 2rem;
+  }
+
+  .hero-content,
+  .hero-image {
+    display: none;
+  }
+
+  .hero-content {
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    max-width: 90%;
+    font-size: 1rem;
+  }
+
+  .hero-image img {
+    max-width: 90%;
+  }
+}
+
+/* Menú oculto en móvil */
+@media (max-width: 600px) {
+  nav ul {
+    position: fixed;
+    top: 45px; right: 0;
+    background: rgba(30,30,30,0.95);
+    height: calc(100% - 60px);
+    width: 200px;
+    flex-direction: column;
+    padding-top: 30px;
+    gap: 20px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 9;
+  }
+  nav ul.active {
+    transform: translateX(0);
+  }
+  nav ul li a {
+    font-size: 1.2rem;
+    color: white;
+    padding-left: 20px;
+  }
+  nav button {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* Footer responsive */
+@media (max-width: 768px) {
+  .footer-main {
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+    max-width: 100%;
+  }
+  .footer-column {
+    width: 100%;
+  }
+  .footer-column ul {
+    padding-left: 20px; /* para que no quede muy pegado */
+  }
+  .newsletter form {
+    flex-direction: column;
+  }
+  .newsletter input[type="email"],
+  .newsletter button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .newsletter input[type="email"] {
+    margin-bottom: 10px;
+  }
+}
+
+/* Header responsive */
+@media (max-width: 768px) {
+  header {
+    height: 60vh; /* menos alto en pantallas chicas */
+  }
+
+  .hero-content {
+    max-width: 90%;
+    padding: 0 15px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .hero-content button {
+    padding: 10px 25px;
+    font-size: 1rem;
+  }
+}
+
+/* Más pequeño para móviles muy pequeños */
+@media (max-width: 480px) {
+  header {
+    height: 50vh;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .hero-content button {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 30px 15px;
+    max-width: 95%;
+  }
+
+  main section h2 {
+    font-size: 1.8rem;
+  }
+
+  main section p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 20px 10px;
+  }
+
+  main section h2 {
+    font-size: 1.5rem;
+  }
+
+  main section p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Ajustar ancho y posición del menú */
+  .accessibility-menu {
+    width: 90vw;
+    max-width: none;
+    top: 10px;
+    right: 5vw;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+}
+
+/* Responsive para móvil */
+@media (max-width: 900px) {
+  .cv-container {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .cv-sidebar {
+    max-width: 100%;
+    padding: 30px 20px;
+    position: relative;
+    text-align: left;
+  }
+
+  .cv-sidebar::after {
+    display: none;
+  }
+
+  .cv-photo img {
+    width: 110px;
+    height: 110px;
+    margin-bottom: 15px;
+  }
+
+  .cv-main {
+    padding: 30px 25px;
+  }
+
+  main.cv-main-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+  }
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  main {
+    padding: 20px 10px;
+    max-width: 100%;
+  }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .tips-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .tips-banner img {
+    max-width: 100%;
+  }
+}
+
+/* Responsive: 1 columna en móviles */
+@media (max-width: 700px) {
+  .tips-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Responsive: apilar en móvil */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+    padding: 30px 25px;
+    max-width: 90vw;
+  }
+
+  .contact-info {
+    border-left: none;
+    border-top: 2px solid #e6e9ff;
+    padding-left: 0;
+    padding-top: 25px;
+    min-width: auto;
+    font-size: 0.95rem;
+    gap: 15px;
+  }
+
+  .btn-submit {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .contact-section {
+    margin: 30px 10px;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  textarea {
+    font-size: 0.95rem;
+    padding: 10px 12px;
+  }
+
+  .btn-submit {
+    font-size: 1rem;
+    padding: 12px 0;
+  }
+}
+
+/* Footer logo centrar en móvil */
+@media (max-width: 480px) {
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 450px ) {
+  .accessibility-menu {
+    width: 300px !important;      /* Menor ancho fijo */
+         /* Un poco más a la izquierda */
+    padding: 15px 15px;
+  }
+
+  .acc-btn {
+    width: 130px !important;  /* Botones más angostos */
+    height: 90px;             /* Un poco menos alto */
+    padding: 10px 8px;
+    font-size: 0.9rem;        /* Texto más pequeño */
+  }
+
+  .accessibility-grid {
+    gap: 10px;                /* Espacio entre botones */
+    justify-content: center;  /* Centrar botones */
+  }
+
+  .font-slider {
+    padding: 8px 10px;
+  }
+
+  .accessibility-header {
+    font-size: 1.2rem;
+    padding: 12px 12px;
+  }
+
+  .close-btn {
+    font-size: 24px;
+    top: 8px;
+    right: 8px;
+  }
+}
+
+
+
+/* Responsive para móviles y tablets */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 5vw;
+    gap: 2rem;
+  }
+
+  .hero-content,
+  .hero-image {
+    display: none;
+  }
+
+  .hero-content {
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    max-width: 90%;
+    font-size: 1rem;
+  }
+
+  .hero-image img {
+    max-width: 90%;
+  }
+
+  header {
+    height: 60vh;
+  }
+
+  .hero-content {
+    max-width: 90%;
+    padding: 0 15px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .hero-content button {
+    padding: 10px 25px;
+    font-size: 1rem;
+  }
+
+  main {
+    padding: 30px 15px;
+    max-width: 95%;
+  }
+
+  main section h2 {
+    font-size: 1.8rem;
+  }
+
+  main section p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .footer-main {
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+    max-width: 100%;
+  }
+
+  .footer-column {
+    width: 100%;
+  }
+
+  .footer-column ul {
+    padding-left: 20px;
+  }
+
+  .newsletter form {
+    flex-direction: column;
+  }
+
+  .newsletter input[type="email"],
+  .newsletter button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .newsletter input[type="email"] {
+    margin-bottom: 10px;
+  }
+
+  .contact-wrapper {
+    flex-direction: column;
+    padding: 30px 25px;
+    max-width: 90vw;
+  }
+
+  .contact-info {
+    border-left: none;
+    border-top: 2px solid #e6e9ff;
+    padding-left: 0;
+    padding-top: 25px;
+    min-width: auto;
+    font-size: 0.95rem;
+    gap: 15px;
+  }
+
+  .btn-submit {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    position: fixed;
+    top: 45px; right: 0;
+    background: rgba(30,30,30,0.95);
+    height: calc(100% - 60px);
+    width: 200px;
+    flex-direction: column;
+    padding-top: 30px;
+    gap: 20px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 9;
+  }
+  nav ul.active {
+    transform: translateX(0);
+  }
+  nav ul li a {
+    font-size: 1.2rem;
+    color: white;
+    padding-left: 20px;
+  }
+  nav button {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+
+  /* Ajustar ancho y posición del menú accesibilidad */
+  .accessibility-menu {
+    width: 90vw;
+    max-width: none;
+    top: 10px;
+    right: 5vw;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+
+  /* Cambiar grid a una sola columna para mejor lectura */
+  .accessibility-grid {
+    grid-template-columns: 1fr !important;
+    gap: 15px;
+  }
+
+  /* Ajustar tamaño de botones accesibilidad para que ocupen más ancho */
+  .acc-btn {
+    width: 100% !important;
+    height: auto;
+    padding: 15px 10px;
+    font-size: 1.1rem;
+  }
+
+  /* Ajustar font slider para que ocupe todo el ancho */
+  .font-slider {
+    width: 100%;
+    padding: 10px 10px;
+  }
+
+  /* Ajustar selects accesibilidad para que ocupen todo el ancho */
+  .select-container {
+    grid-column: span 1 !important;
+  }
+
+  /* Botón cerrar menú accesibilidad más accesible */
+  .close-btn {
+    top: 8px;
+    right: 8px;
+    font-size: 24px;
+  }
+}
+
+/* @media (max-width: 480px) {
+  header {
+    height: 50vh;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .hero-content button {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+
+  main {
+    padding: 20px 10px;
+  }
+
+  main section h2 {
+    font-size: 1.5rem;
+  }
+
+  main section p {
+    font-size: 0.9rem;
+  }
+
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  .accessibility-menu {
+    width: 300px !important;
+    padding: 15px 15px;
+  }
+
+  .acc-btn {
+    width: 130px !important;
+    height: 90px;
+    padding: 10px 8px;
+    font-size: 0.9rem;
+  }
+
+  .accessibility-grid {
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .font-slider {
+    padding: 8px 10px;
+  }
+
+  .accessibility-header {
+    font-size: 1.2rem;
+    padding: 12px 12px;
+  }
+
+  .close-btn {
+    font-size: 24px;
+    top: 8px;
+    right: 8px;
+  }
+} */
