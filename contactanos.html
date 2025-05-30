@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Menú Accesibilidad Estilo UserWay</title>
+<link rel="stylesheet" href="css/variables.css" />
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/layout.css" />
+<link rel="stylesheet" href="css/components.css" />
+<link rel="stylesheet" href="css/sections.css" />
+<link rel="stylesheet" href="css/responsive.css" /> 
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet" href="css/tools.css" />
+<link rel="stylesheet" href="css/tips.css" />
+<link rel="stylesheet" href="css/hero.css" />
+<link rel="stylesheet" href="css/form.css" />
+<link rel="stylesheet" href="css/cv.css" />
+<link rel="stylesheet" href="css/accessibility.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/antijingoist/open-dyslexic@1.3.0/open-dyslexic.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+<nav>
+  <div class="logo" aria-label="Logo FOODY">
+    <img class="logo-svg" aria-hidden="true" focusable="false" src="img/logo.svg">
+    FRONT_DEV
+  </div>
+  <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="index3.html">TIPS</a></li>
+    <li><a href="index4.html">TOOLS</a></li>
+    <li><a href="contactanos.html">CV</a></li>
+  </ul>
+  <button>SUSCRIBETE</button>
+  <div class="hamburger" id="hamburger" aria-label="Menú móvil">
+    <div></div><div></div><div></div>
+  </div>
+</nav>
+
+<main class="cv-main-section" aria-labelledby="cv-title">
+  <h2 id="cv-title">Currículum Vitae</h2>
+  <div class="cv-container" role="region" aria-label="Currículum vitae de Juan Pérez">
+
+    <!-- Sidebar izquierdo -->
+    <aside class="cv-sidebar" aria-label="Información personal">
+      <div class="cv-photo">
+        <img src="Photo2.jpg" alt="Foto de perfil de Juan Pérez" />
+      </div>
+
+      <div class="cv-contact">
+        <h2>Contacto</h2>
+        <a href="tel:+553141634071"><i class="bi bi-telephone-fill" aria-hidden="true"></i> +52 314 163 4071</a>
+        <a href="layla1068.emosa@gmail.com"><i class="bi bi-envelope-fill" aria-hidden="true"></i> layla1068.emosa@gmail.com</a>
+                <a href="layla1068.emosa@gmail.com"><i class="bi bi-github" aria-hidden="true"></i> github.com/MeganPegueros</a>
+      </div>
+
+      <hr class="cv-divider" />
+
+      <h3>Habilidades</h3>
+      <ul class="cv-skills-list-sidebar" aria-label="Lista de habilidades principales">
+        <li>Liderazgo</li>
+        <li>Responsabilidad</li>
+        <li>Proactividad</li>
+        <li>Resolución de problemas</li>
+        <li>Trabajo en equipo</li>
+      </ul>
+
+      <hr class="cv-divider" />
+      
+      <h3>Idiomas</h3>
+      <ul class="cv-skills-list-sidebar" style="margin-bottom: 0px;" aria-label="Lista de habilidades principales">
+        <li>Ingles</li>
+        <li>Español</li>
+      </ul>
+
+      <hr class="cv-divider" />
+
+      <h3>Educación</h3>
+      <div class="cv-education-sidebar">
+        <div class="edu-item">
+          <strong>Ingeniería de software</strong>
+          <span>Universidad de Colima</span><br />
+          <span>2022 - 2026</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Contenido derecho -->
+    <section class="cv-main" aria-label="Detalle del currículum">
+
+      <h1>Mariana Pegueros</h1>
+      <h2 class="role-title">Desarrollador Front-End</h2>
+
+      <article class="cv-section-block" aria-labelledby="experience-title">
+        <h3 id="experience-title">Perfil profesional</h3>
+
+        <div class="cv-job" tabindex="0">
+          <p class="cv-job-description">
+            Apasionado por el desarrollo Front-End, con formación en Ingeniría de software en la Universidad de Colima. 
+            Competente en HTML, CSS y JavaScript, con experiencia en proyectos académicos y personales.
+            En constante aprendizaje de nuevas tecnologías y metodologías para crear interfaces web intuitivas y accesibles.
+          </p>
+        </div>
+      </article>
+
+      <article class="cv-section-block" aria-labelledby="education-title">
+        <h3 id="education-title">Proyectos relevantes</h3>
+        <div class="cv-education" tabindex="0">
+          <p class="cv-job-description"><strong>Perfil de GitHub:</strong> <a class="a-cv" href="github.com/MeganPegueros">github.com/MeganPegueros</a><br>
+          En mi perfil puedes encontrar diversos proyectos personales y académicos enfocados en desarrollo Front-End, donde aplico tecnologías como HTML, CSS, JavaScript y frameworks modernos.</p>
+        </div>
+      </article>
+
+      <article class="cv-section-block" aria-labelledby="skills-title">
+        <h3 id="skills-title">Habilidades Técnicas</h3>
+        <ul class="cv-skills-list-main" aria-label="Lista detallada de habilidades técnicas">
+          <li>HTML5</li>
+          <li>CSS3 / SASS</li>
+          <li>JavaScript</li>
+          <li>Flutter</li>
+          <li>Kotlin</li>
+          <li>Vue.js</li>
+          <li>Git & GitHub</li>
+          <li>Python</li>
+          <li>C</li>
+          <li>C#</li>
+          <li>C++</li>
+          <li>Figma</li>
+          <li>Adobe XD</li>
+          <li>Adobe Photoshop</li>
+          <li>Principios básicos de UX/UI </li>
+        </ul>
+      </article>
+
+    </section>
+
+  </div>
+</main>
+
+
+
+<footer>
+  <div class="footer-main">
+    <div class="footer-logo">
+      <svg width="40" height="40" fill="white" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2L2 22h20L12 2z"/></svg>
+    </div>
+    <div class="footer-column">
+      <h4>ABOUT SAVVY</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Get in touch</a></li>
+        <li><a href="#">FAQs</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>PRODUCT</h4>
+      <ul>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">How it works</a></li>
+        <li><a href="#">Member Discounts</a></li>
+      </ul>
+    </div>
+    <div class="footer-column newsletter">
+      <h4>NOT QUITE READY FOR SAVVY?</h4>
+      <p>Join our online no-code community for free. No spam. Ever.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- SVG Filters para daltonismo -->
+<svg style="display:none;" aria-hidden="true" focusable="false">
+  <filter id="protanopia">
+    <feColorMatrix type="matrix"
+      values="0.567,0.433,0,0,0
+              0.558,0.442,0,0,0
+              0,0.242,0.758,0,0
+              0,0,0,1,0"/>
+  </filter>
+
+  <filter id="deuteranopia">
+    <feColorMatrix type="matrix"
+      values="0.625,0.375,0,0,0
+              0.7,0.3,0,0,0
+              0,0.3,0.7,0,0
+              0,0,0,1,0"/>
+  </filter>
+
+  <filter id="tritanopia">
+    <feColorMatrix type="matrix"
+      values="0.95,0.05,0,0,0
+              0,0.433,0.567,0,0
+              0,0.475,0.525,0,0
+              0,0,0,1,0"/>
+  </filter>
+</svg>
+
+<!-- Botón flotante accesibilidad -->
+<button id="btn-accessibility" aria-label="Abrir menú de accesibilidad" class="btn-accessibility" title="Abrir menú de accesibilidad" aria-expanded="false" aria-controls="accessibility-menu"><i class="bi bi-universal-access icon"></i></button>
+
+<!-- Menú accesibilidad estilo grid lado izquierdo del botón -->
+<div id="accessibility-menu" class="accessibility-menu hidden" role="region" aria-label="Opciones de accesibilidad">
+  <button id="close-accessibility" class="close-btn" aria-label="Cerrar menú de accesibilidad">×</button>
+  
+  <!-- Encabezado del menú -->
+  <div class="accessibility-header" role="banner" aria-label="Encabezado menú accesibilidad">
+    <h3>Accessibility Menu</h3>
+  </div>
+
+  <div class="accessibility-grid">
+
+    <div class="font-slider" aria-label="Control de tamaño de fuente" role="group">
+      <label for="font-size-range"><strong>Tamaño de Fuente</strong></label>
+      <input 
+        type="range" 
+        id="font-size-range" 
+        min="0" max="6" step="1" 
+        value="3" 
+        aria-valuemin="0.5" 
+        aria-valuemax="2.0" 
+        aria-valuenow="1.0" 
+        aria-valuetext="Tamaño de fuente normal"
+      />
+      <div class="font-labels">
+        <span>0.5</span>
+        <span>0.7</span>
+        <span>0.85</span>
+        <span>1.0</span>
+        <span>1.3</span>
+        <span>1.6</span>
+        <span>2.0</span>
+      </div>
+    </div>
+
+    <div class="select-container" style="grid-column: span 2;">
+      <label for="cursor-type-select"><strong>Tipo de Cursor</strong></label>
+      <select id="cursor-type-select" aria-label="Seleccionar tipo de cursor">
+        <option value="default" selected>Flecha</option>
+        <option value="pointer">Manito</option>
+        <option value="crosshair">Cruz</option>
+        <option value="wait">Reloj</option>
+        <option value="text">Texto</option>
+      </select>
+    </div>
+
+
+    <div class="select-container" style="grid-column: span 2;">
+      <label for="color-mode-select"><strong>Modo Colores</strong></label>
+      <select id="color-mode-select" aria-label="Seleccionar modo colores para daltonismo y contraste">
+        <option value="normal" selected>Normal</option>
+        <option value="protanopia">Protanopía</option>
+        <option value="deuteranopia">Deuteranopía</option>
+        <option value="tritanopia">Tritanopía</option>
+      </select>
+    </div>
+
+    <!-- Select para cambio de fuente -->
+    <div class="select-container" style="grid-column: span 2;">
+      <label for="font-select"><strong>Fuente</strong></label>
+      <select id="font-select" aria-label="Seleccionar fuente">
+        <option value="Arial, sans-serif" selected>Arial</option>
+        <option value="Verdana, sans-serif">Verdana</option>
+        <option value="'Comic Sans MS', cursive, sans-serif">Comic Sans</option>
+        <option value="'Open Dyslexic', sans-serif">Open Dyslexic</option>
+      </select>
+    </div>
+
+    <button class="acc-btn" id="toggle-contrast" aria-pressed="false" aria-label="Activar modo alto contraste">
+      <span class="icon">🌗</span>
+      <span>Alto Contraste</span>
+    </button>
+
+    <button class="acc-btn" id="toggle-darkmode" aria-pressed="false" aria-label="Activar modo oscuro">
+      <span class="icon">🌙</span>
+      <span>Modo Oscuro</span>
+    </button>
+
+    <button class="acc-btn" id="toggle-letter-spacing" aria-pressed="false" aria-label="Activar espaciado para disléxicos">
+      <span class="icon">🔡↔️</span>
+      <span>Espaciado Disléxico</span>
+    </button>
+
+    <button class="acc-btn" id="toggle-images" aria-pressed="false" aria-label="Ocultar imágenes">
+      <span class="icon">🚫🖼️</span>
+      <span>Quitar Imágenes</span>
+    </button>
+
+    <button class="acc-btn" id="toggle-links" aria-pressed="false" aria-label="Quitar enlaces">
+      <span class="icon">🔗🚫</span>
+      <span>Quitar Links</span>
+    </button>
+
+    <button class="acc-btn" id="toggle-highlight-links" aria-pressed="false" aria-label="Resaltar enlaces">
+      <span class="icon">🔗✨</span>
+      <span>Resaltar Links</span>
+    </button>
+
+  </div>
+</div>
+<script src="js/send_email.js"></script>
+<script src="js/script.js"></script>
+<script src="js/touch.js"></script>
+<script src="js/components.js"></script>
+</body>
+</html>
